@@ -32,7 +32,7 @@ const upsertRepo = async (req, res) => {
 	}
 }
 
-const getRepo = (req, res) => {
+const getRepo = async (req, res) => {
 	try {
 		let id = +req.params.id;
 		if (!id) {
